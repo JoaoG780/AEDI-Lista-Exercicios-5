@@ -2,9 +2,6 @@
 
 int funcao (int n) {
     
-    if (n == 0) {
-        return 0;
-    }
     if (n == 1) {
 
         return 1;
@@ -23,8 +20,12 @@ int main() {
     
     printf("Digite um inteiro positivo: ");
     scanf("%d", &n);
-    
-    printf("A soma de todos os numeros de 1 a %d é: %d", n, funcao(n));
 
+    if (n <= 0) {
+        printf("Numero invalido");
+    } else {
+    
+        printf("A soma de todos os numeros de 1 a %d é: %d", n, funcao(n));
+    }
     return 0;
 }
