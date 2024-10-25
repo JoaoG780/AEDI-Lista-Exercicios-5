@@ -24,7 +24,7 @@ int main() {
     printf("Digite um inteiro positivo: ");
     scanf("%d", &n);
     
-    printf("%d", funcao(n));
+    printf("A soma de todos os numeros de 1 a %d é: %d", n, funcao(n));
 
     return 0;
 }
